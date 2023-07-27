@@ -125,7 +125,7 @@ const Order = ({ data }: any) => {
                           {...field}
                           id="p-sl"
                           options={restaurant}
-                          placeholder="Người lớn"
+                          placeholder="Chọn nhà hàng"
                         />
                       );
                     }}

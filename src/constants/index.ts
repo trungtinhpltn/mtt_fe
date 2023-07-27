@@ -152,6 +152,6 @@ export const MAX_PERSON = Array(20)
   .fill(1)
   .map((item, index) => ({ label: index + 1 + "", value: index + 1 + "" }));
 
-export const MAX_CHILDREN = Array(20)
+export const MAX_CHILDREN = Array(11)
   .fill(1)
-  .map((item, index) => ({ label: index + 1 + "", value: index + 1 + "" }));
+  .map((item, index) => ({ label: index  + "", value: index + "" }));

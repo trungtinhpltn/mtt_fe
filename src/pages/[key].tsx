@@ -123,6 +123,13 @@ const ViewOrder = ({ data, restaurants }: any) => {
                       >
                         Hủy yêu cầu
                       </button>
+                      <div className="flex justify-center w-full">
+                        <Link href="/">
+                          <a className="bg-neutral-400 text-white py-2 px-6 rounded-full font-semibold block flex-1 text-center">
+                            Trang chủ
+                          </a>
+                        </Link>
+                      </div>
                     </div>
                   ) : (
                     <div className="flex justify-center">
