@@ -1,6 +1,6 @@
 import Loading from "@/components/Loading";
 import { serviceAPI } from "@/services/serviceAPI";
-import { toastError } from "@/utils/toast";
+import { toastError, toastSuccess } from "@/utils/toast";
 import { schemaCreateOrder } from "@/utils/validate";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { GetServerSideProps } from "next";
@@ -85,6 +85,7 @@ const Order = ({ data }: any) => {
         restaurantId: +data?.restaurant?.value,
       })
       .then((res) => {
+        toastSuccess("Thành công");
         router.push(`/${res?.data?.data?.key}`);
       })
       .catch((errors) => {
